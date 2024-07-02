@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" type="image/jpg" href="img/mmlogo.jpg">
+    <title>memanejomanejando.cl</title>
+</head>
+
+<body>
+
+    <!-----start Hearder section----->
+    <div id="hearder">
+        <div class="contenier" id="blur">
+            <nav>
+                <a href="#services">
+                    <img src="img/logop.jpeg" alt="logo" class="logo"></a>
+                <ul id="sidmenu">
+                    <li><a href="#" onclick="toggle()">Cursos</a></li>
+                    <li><a href="#services">Precios</a></li>
+                    <li><a href="#about">Tutor</a></li>
+                    <li><a href="#portfolio">Mis Marcas</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-car" onclick="openmenu()"> PRESIONA PARA INICIAR</i>
+            </nav>
+            <div id="portada">
+                <div class="logo-1">
+                </div>
+                <div class="saludo">
+                    <p>MEMANEJOMANEJANDO.CL</p>
+                    <span>Cursos de Conducción</span>
+                    <p>Particular</p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-----End Hearder section----->
+    <!-----Service PLAN DE ESTUDIO Start----->
+    <div id="services">
+        <div class="contenier">
+            <h1 class="sub-title">PLAN DE ESTUDIO 2024</h1>
+            <div class="services-list">
+                <div>
+                    <img src="img/test3.jpeg">
+                    <h2>¡Prueba tus Conocimientos!</h2>
+                    <p>Refuerza tus estudios <br>Accede a un DESAFIANTE Juego de Preguntas <br>Responde y al finalizar obtendras el resultado</p>
+                    <a href="paginas/indexquiz.html">Juega Aquí</a>
+                </div>
+                <div>
+                    <img src="img/test1.jpeg">
+                    <h2>Cursos de Conducción Particular</h2>
+                    <p>Tutoria de Estudio Guiada</p>
+                    <a href="#" onclick="toggle()">Precios</a>
+                </div>
+                <div>
+                    <img src="img/test.jpeg">
+                    <h2>Examen de Nivelación</h2>
+                    <p>Mide tus conocimientos <br>Examen con evaluación personalizada GRATIS <br>Apruebas al superar el 87% de las preguntas.<br><i class="fa-regular fa-clock"></i> 45 min</p>
+                    <a href="https://forms.gle/nbehyLff7PuJkJvY8">¡QUIERO MI LICENCIA 🪪! </a>
+                </div>
+            
+
+            </div>
+
+        </div>
+    </div>
+    <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCjFeIISg_omwYB7ofpQuhJoyX9A5UgDNozAq6P1iEHW7sDA/viewform?embedded=true" width="640" height="12436" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe> --->
+    <!----services section end ----->
+
+    <!-----start SOBRE MI section----->
+    <div id="about">
+        <div class="contenier">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/yo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">SOBRE MI</h1>
+                    <p>Profesional Autónomo <br>Titulado de Ingeniería en Maquinaria, Vehículos Automotrices y <br>
+                        Sistemas Electrónicos <br>Productor, DJ y Programador Web.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('experience')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Port Folio</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li>Cursos de Conducción | SEMEP en validación<br><span>2 años de experiencia</span></li>
+                            <li>Asesor de Servicio Concesionaria Automotriz<br><span>Hernández Motores &nbsp|&nbsp 2023 - 2024</span></li>
+                            <li>Front End Junior<br><span>2022 - 2024</span></li>
+                            <li>Representante de Ventas<br><span>Práctica Profesional Automotores
+                                    Gildemeister</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <p>ÆROO Studio.</p><a href="paginas/indexstudio.html">Conoce más</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li>HTML5 | CSS3 | JavaScript | Conocimientos en React | Angular | Bootstrap<br><span>Web Development &nbsp|&nbsp Designing Web</span></li>
+                            <li>Cursos de Conducción<br><span>Tutor Teórico y Práctico</span></li>
+                            <li>ÆROO Studio.<br><span>Productor y DJ</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----End SOBRE MI section----->
+
+
+
+
+
+
+
+    <!----portfolio section Start ----->
+
+    <div id="portfolio">
+        <div class="contenier">
+            <h1 class="sub-title">MIS MARCAS</h1>
+            <p></p>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/logoefyiu.jpg">
+                    <div class="layer">
+                        <h2>PREMIUM <br>QUALITY <br>GOODS</h2>
+
+                        <a href="https://www.instagram.com/airoo.cl/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="img/Preview.jpg">
+                    <div class="layer">
+                        <h3>LOCAL PERFORMÆRS</h3>
+
+                        <a href="https://www.instagram.com/airoo.studio/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="img/mmlogo.jpg">
+                    <div class="layer">
+                        <h3>TUTORIA DE CONDUCCIÓN</h3>
+
+                        <a href="https://www.instagram.com/memanejomanejando.cl/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!----portfolio section End ----->
+
+
+    <!----Contact section Start ----->
+    <div id="contact">
+        <div class="contenier">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">JUNTOS PODEMOS MÁS</h1>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:admin@memanejomanejando.cl?Subject=Contacto%20Página%20Web%20MMM.cl">Mail Me</a></p>
+                    <p><i class="fa-brands fa-whatsapp"></i><a
+                            href="https://wa.me/+56946914558">+56946914558</a></p>
+                    <div class="social-icons">
+                        <!--<a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/leomcfly"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/leonardo-ariel-aguirre-suazo/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="archivos/CV_Leonardo_Aguirre Suazo.pdf" class="btn btn2">CV Profesional &nbsp|&nbsp  <i class="fa-regular fa-file-pdf"></i></a>
+                    <a href="archivos/Documentación Cursos de Conducción.pdf" class="btn btn3">Documentación Formal Cursos &nbsp|&nbsp  <i class="fa-solid fa-file-arrow-down"></i></a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <h1>CONTÁCTANOS</h1>
+                        <input type="text" class="name" placeholder="¡Hola!. ¿Cómo te llamas?" required>
+
+
+                        <input type="text" class="email" placeholder="Escribe aquí tu Email" required>
+
+
+                        <input type="text" class="numero" placeholder="Escribe aquí tu Teléfono de Contacto" required>
+
+
+                        <textarea class="message" placeholder="Escribe aquí tu mensaje" required></textarea>
+                        <button type="button" onclick="sendwhatsapp();">Enviar WhatsApp </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!----- POP UP BLUR ----->
+
+        <div id="popup">
+            <img src="img/precios.png" alt="precios">
+            <a href="#" onclick="toggle()"><i class="fa-solid fa-xmark" onclick="closemenu()"></i></a>
+        </div>
+        <script>
+            function toggle() {
+                var blur = document.getElementById('blur');
+                blur.classList.toggle('active');
+                var popup = document.getElementById('popup');
+                popup.classList.toggle('active');
+            }
+        </script>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+            var sidmenu = document.getElementById("sidmenu");
+            function openmenu() {
+                sidmenu.style.right = "0";
+            }
+            function closemenu() {
+                sidmenu.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            function sendwhatsapp() {
+                var phonenumber = "+56946914558";
+
+                var name = document.querySelector(".name").value;
+                var email = document.querySelector(".email").value;
+                var numero = document.querySelector(".numero").value;
+                var message = document.querySelector(".message").value;
+
+                var url = "https://wa.me/+56946914558" + "?text="
+                    + "Nombre :" + name + "%0a"
+                    + "Email :" + email + "%0a"
+                    + "Número" + numero + "%0a"
+                    + "Message :" + message + "%0a%0a";
+
+                window.open(url, '_blank').focus();
+            }
+        </script>
+
+</body>
+<footer>
+    <div class="copyright">
+        <p> Desarrollado con <i class="fa-solid fa-heart"> </i> ÆTHELSTAN</p>
+    </div>
+    </div>
+    <!--------->
+</footer>
+
+</html>

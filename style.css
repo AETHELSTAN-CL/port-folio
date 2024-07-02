@@ -1,0 +1,737 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #000000;
+    color: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#hearder {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+#portada {
+    background: #fff;
+}
+
+.saludo {
+    padding-top: 390px;
+    margin: 20px;
+}
+
+.saludo p {
+    color: #000000;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.saludo span {
+    color: crimson;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*---------start SOBRE MI section-------*/
+#about {
+    color: #fff;
+    background-color: #000000;
+    background-position: center;
+    background-size: cover;
+    margin: 5%;
+    margin-top: 20%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 40%;
+}
+
+.about-col-1 img {
+    width: 90%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.about-col-2 p {
+    font-size: 20px;
+}
+
+
+.about-col-2 .sub-title {
+    font-size: 25px;
+    padding-top: 12px;
+    justify-content: left;
+}
+.tab-titles {
+    display: flex;
+    margin: 35px 0 50px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.9s;
+}
+
+.tab-links.active-link::after {
+    width: 80%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+
+.tab-contents ul li span {
+    color: rgb(220, 20, 60);
+    font-size: 16px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents p {
+    font-size: 22px;
+}
+
+.tab-contents a {
+    color: rgb(220, 20, 60);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/*----------------End SOBRE MI section -------------*/
+
+
+/*----------------start PLAN DE ESTUDIO section -------------*/
+#services .contenier {
+    background: #03005c;
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 10%;
+
+}
+
+#services .contenier h2 {
+    color: #0008ff;
+    font-size: 20px;
+}
+
+#services .contenier .sub-title {
+    padding-top: 5%;
+}
+
+#services .contenier p {
+    margin-top: 5%;
+    color: #03005c;
+    font-size: 12px;
+}
+
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 60px;
+    margin-top: 5%;
+}
+
+.services-list div {
+    background: #ffffff;
+    padding: 40px;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.3s;
+
+}
+
+.services-list div img {
+    margin-bottom: 30px;
+    width: 30%;
+}
+
+.services-list div h2 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 11px;
+    margin-top: 40px;
+    display: inline-block;
+    border: 1px solid #0011ff;
+    padding: 8px 40px ;
+    border-radius: 5px;
+    background: radial-gradient(rgb(0, 8, 255), rgb(34, 128, 250), #00d5ff9f);
+}
+
+.services-list div a:hover {
+    background: #fff;
+    color: #000000;
+
+}
+
+.services-list div:hover {
+    background: #ffffff;
+    transform: translateY(-30px);
+
+}
+
+/*----------------PLAN DE ESTUDIO section -------------*/
+
+
+/*----------------start MIS MARCAS section -------------*/
+.contenier h1 {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 10%;
+    font-size: 32px;
+    color: #fff;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 60px;
+    margin: 5%;
+    padding-bottom: 20%;
+
+}
+
+.work {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 20px;
+    display: inline-block;
+    transition: transform 1s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(#00d5ff9f, rgba(43, 133, 250, 0.954), rgb(0, 81, 255), rgb(0, 8, 255));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer a {
+    color: crimson;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 40px;
+    background: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    text-align: center;
+    transition: transform 1s;
+
+}
+
+.work:hover img {
+    transform: scale(0.9);
+}
+
+.work .layer h2 {
+    font-size: 25px;
+    color: #000000;
+    margin: 14%;
+    padding-top: 30%;
+}
+
+.work .layer h3 {
+    font-size: 20px;
+    padding-top: 60%;
+    margin: 2%;
+}
+
+.work:hover .layer {
+    height: 120%;
+
+}
+
+.work:hover .layer a {
+    transform: scale(1.1);
+}
+
+/*----------------end portfolio section -------------*/
+
+
+/*---------------- Start Contact section -------------*/
+#contact {
+    background: linear-gradient(rgba(255, 72, 203, 0.737),rgba(255, 31, 91, 0.822),rgba(35, 1, 255, 0.793),rgb(34, 73, 247));
+}
+
+.sub-title {
+    padding-top: 150px;
+}
+
+.contact-left {
+    flex-basis: 40%;
+    padding-left: 50px;
+}
+
+.contact-right {
+    flex-basis: 60%;
+    padding-bottom: 20%;
+}
+
+.contact-left h1 {
+    color: #ababab;
+
+}
+
+.contact-left p a {
+    text-decoration: none;
+    color: #ababab;
+}
+
+.contact-left p {
+    color: #ababab;
+    margin-top: 10px;
+}
+
+.contact-left p i {
+    color: rgb(9, 184, 18);
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+
+.contact-left .sub-title {
+    justify-content: left;
+}
+
+.social-icons {
+    margin-top: 30px;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    font-size: 12px;
+    border: 1px solid rgb(9, 184, 18);
+    padding: 7px 40px;
+    margin-top: 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background: rgb(255, 255, 255);
+    color: #000000;
+}
+
+
+.contact-right form {
+    width: 90%;
+    padding-top: 130px;
+    padding-left: 35px;
+
+}
+
+form input,
+form textarea {
+    box-sizing: border-box;
+    resize: vertical;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ffffffc0;
+    padding: 15px;
+    margin: 12px 0;
+    color: #262626;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.copyright {
+    color: #ffffffa5;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    background: #000000;
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.copyright i {
+    color: crimson;
+}
+
+/*---------------- End Contact section -------------*/
+
+nav .fa-solid {
+    display: none;
+}
+
+form {
+    margin: 20px 5px;
+    width: 1500px;
+    font-size: 16px;
+}
+
+form h1 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+form button {
+    background-color: #ffffff00;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(9, 184, 18);
+    border-radius: 6px;
+}
+
+form button:hover {
+    background: green;
+}
+
+.contenier#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+    position: fixed;
+}
+
+#popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#popup img {
+    height: 80vh;
+}
+
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 2;
+    transform: 0.5s;
+}
+
+#popup .fa-solid {
+    color: #03005c;
+    position: absolute;
+    bottom: 55px;
+    right: 45px;
+    cursor: pointer;
+}
+
+
+@media Only Screen and (max-width:840px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+   
+    nav .fa-solid {
+        display: block;
+        font-size: 35px;
+        padding-left: 150px;
+        padding-right: 10px;
+        
+    }
+    nav .fa-car {
+        display: block;
+        font-size: 11px;
+        
+    }
+    .logo {
+        width: 60px;
+    }
+
+    nav ul {
+        background: linear-gradient(rgba(255, 72, 203, 0.496),rgba(255, 31, 91, 0.482),rgba(35, 1, 255, 0.501),rgba(34, 73, 247, 0.491));
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 15px;
+        z-index: 1;
+        transition: right 0.5s;
+        border-radius: 2px;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        /*filter: blur(8px);
+        -webkit-filter: blur(8px);*/
+
+    }
+
+    nav ul li {
+        display: block;
+        padding-bottom: 30px;
+        margin: 40px;
+        font-weight: 550;
+
+    }
+
+    nav ul .fa-solid {
+        position: fixed;
+        cursor: pointer;
+    }
+    #portada {
+        width: 100%;
+    }
+    
+
+    .saludo {
+        padding-top: 400px;
+        margin: 4%;
+    }
+
+    .saludo p {
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .saludo span {
+        color: crimson;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        flex-basis: 40%;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .about-col-1 img {
+        width: 100%;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+    .contact-right form {
+        padding-left: 40px;
+        
+    }
+    #services h1 {
+        font-size: 30px;
+        padding-top: 20%;
+    }
+
+    .tab-contents a {
+        text-decoration: none;
+    }
+
+    .work-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-left: 6%;
+        padding-bottom: 150px;
+    }
+
+    .layer {
+        width: 100%;
+        background: linear-gradient(#00d5ff8b, rgba(24, 123, 252, 0.978), rgb(0, 8, 255));
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        transition: height 0.5s;
+
+    }
+
+    .layer a {
+        margin-top: 2%;
+    }
+
+    .work .layer h2 {
+        font-size: 30px;
+    }
+
+    .work .layer h3 {
+        font-weight: 600;
+        font-size: 28px;
+        padding-top: 50%;
+    }
+
+   
+    #popup {
+        position: fixed;
+        width: 80%;
+    }
+
+    #popup img {
+        width: 90%;
+        height: 50vh;
+    }
+
+    #popup .fa-solid {
+        position: absolute;
+        bottom: 55px;
+        right: 45px;
+        cursor: pointer;
+
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+@media (Orientation: landscape) {
+    .saludo {
+        padding-top: 200px;
+        margin: 4%;
+    }
+
+}
+
