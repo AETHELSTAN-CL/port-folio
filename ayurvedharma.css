@@ -1,0 +1,429 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9F9F9;
+    /* Blanco */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0dd9e;
+    height: calc(12vh - 60px);
+
+    /* Amarillo cálido */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a {
+    justify-content: space-around;
+}
+
+.toggle-button {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    color: #4CAF50;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    /* Altura total menos la altura del header */
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #E6E6FA;
+    /* Lavanda */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content2 {
+    text-align: left;
+    padding: 40px;
+    background: #f0dd9e;
+    /* Lavanda */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    /* Inicia fuera de la pantalla */
+    width: 300px;
+    height: 100%;
+    background-color: rgba(205, 75, 75, 0.8);
+    /* Fondo con efecto blur */
+    backdrop-filter: blur(40px);
+    transition: left 0.3s ease-in-out;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilos para el icono flotante */
+.floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(205, 75, 75, 0.8);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.floating-icon a {
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 24px;
+    display: block;
+
+}
+
+.floating-icon2 {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: rgba(205, 75, 75, 0.8);
+    /* Amarillo cálido */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.floating-icon2 a {
+    text-decoration: none;
+    color: #bfbff8;
+    /* Lavanda */
+    font-size: 24px;
+    display: block;
+}
+
+.floating-icon3 {
+    position: fixed;
+    bottom: 160px;
+    right: 20px;
+    background-color: rgba(205, 75, 75, 0.8);
+    /* Amarillo cálido */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.floating-icon3 a {
+    text-decoration: none;
+    color: #f8fd7a;
+    /* Lavanda */
+    font-size: 24px;
+    display: block;
+}
+/* Section Two */
+.contenier {
+    background: rgba(205, 75, 75, 0.8);
+    margin: 4px;
+    border-radius: 20px;
+}
+.contenier h1 {
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+    padding-bottom: 10%;
+    font-size: 32px;
+    color: #050000;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 60px;
+    margin: 5%;
+    padding-bottom: 20%;
+
+}
+
+.work {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 20px;
+    display: inline-block;
+    transition: transform 1s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(#d4ff009f, rgba(233, 250, 43, 0.954), rgb(212, 255, 0), rgb(255, 234, 0));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 40px;
+    background: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    text-align: center;
+    transition: transform 1s;
+
+}
+
+.work:hover img {
+    transform: scale(0.9);
+}
+
+.work .layer h2 {
+    font-size: 25px;
+    color: #000000;
+    margin: 14%;
+    padding-top: 30%;
+}
+
+.work:hover .layer {
+    height: 120%;
+
+}
+
+.work:hover .layer a {
+    transform: scale(1.1);
+}
+/* Estilos para el form contacto */
+
+#contact {
+    
+}
+
+.sub-title {
+    padding-top: 150px;
+}
+
+.contact-left {
+    flex-basis: 40%;
+    padding-left: 50px;
+}
+
+
+.contact-left h1 {
+    color: #ffffff;
+
+}
+
+.contact-left p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact-left p {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.contact-left p i {
+    color: rgb(9, 184, 18);
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+
+.contact-left .sub-title {
+    justify-content: left;
+}
+
+.social-icons {
+    margin-top: 30px;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    font-size: 12px;
+    border: 1px solid rgb(9, 184, 18);
+    padding: 7px 40px;
+    margin-top: 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background: rgb(255, 255, 255);
+    color: #000000;
+}
+
+
+.contact-right form {
+    width: 90%;
+    padding-top: 130px;
+    padding-left: 35px;
+
+}
+
+form input,
+form textarea {
+    box-sizing: border-box;
+    resize: vertical;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ffffffc0;
+    padding: 15px;
+    margin: 12px 0;
+    color: #262626;
+    font-size: 15px;
+    border-radius: 6px;
+}
+form {
+    width: 80%;
+    padding-left: 10%;
+}
+form h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: rgb(185, 185, 248);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: green;
+}
+
+.float-end a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: #bfbff8;
+
+}
+
+/* Estilos para el footer */
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 8px;
+}
+@media Only Screen and (max-width:840px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar a {
+        display: none;
+    }
+
+@media (Orientation: landscape) {
+    .saludo {
+        padding-top: 200px;
+        margin: 4%;
+    }
+
+}
+}
